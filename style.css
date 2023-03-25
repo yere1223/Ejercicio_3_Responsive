@@ -1,0 +1,303 @@
+/* Reglas de CSS para Maquetar una Pagina Basica con Estructura HTML5 y CSS*/
+/* Creado por Ing. Juancito Peña*/
+
+/* 1era. Regla Marenes 0 a todo el Body y su contenido, iniciamos en cero todo*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2da. Regla para el Body */
+
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(95, 158, 160);
+}
+
+/* 3era. Regla para el Contenedor de mi Pagina Web */
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+    border: 3px solid midnightblue;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(95, 158, 160);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 4ta. Regla para el Encabezado o Header */
+
+header{
+    color: rgb(255, 157, 0);
+    text-align: center;
+    background-color:midnightblue;
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height:50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* 5ta.  Regla para la Navegacion o Menu o Nav */
+
+ nav{
+    color: rgb(135, 206, 250);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+} 
+
+
+  /* 6ta. Regla para el estiolo del Contenido */
+
+ #contenido{
+    width:70%;
+    height:100%;
+    background-color: midnightblue;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+  /* 7ma. Regla para el estiolo de texto del Contenido */
+
+#contenido h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 157, 0);
+    }
+
+.primero{
+    width: 97.5%;
+    height:100%;
+    background-color: rgba(4, 4, 5, 0.425);
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    }    
+
+.segundo{
+    width: 97.5%;
+    height:100%;
+    background-color: rgba(4, 4, 5, 0.425);
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }    
+
+#contenido h3{
+    color: rgb(255, 157, 0);
+}
+
+#contenido p{
+    font-size: 20px;
+    color: rgb(135, 206, 250);
+}
+
+  /* 8va. Regla para el estiolo para el aside */
+
+aside{
+    width:29%;
+    height: 100%;
+    background-color: rgb(255, 157, 0);
+    float: right;
+    margin-top: 10px;
+
+}
+  /* 9na. Regla para el estiolo para el aside */
+aside h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: midnightblue;
+}
+
+.clearfix{
+    clear: both;
+}
+
+  /* 10ma. Regla para el estiolo  del footer */
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+    border-top: 3px solid cyan;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: cyan; 
+    margin-bottom: 10px;
+
+}
+
+/*FORMATO PARA DISTINTAS PANTALLAS*/
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    
+    .container {
+        width: 68%;
+        height: 100%;
+        margin: 0px auto;
+        border-radius: 10px;
+        border: 3px solid midnightblue;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgb(95, 158, 160);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+ /* 6ta. Regla para el estiolo del Contenido */
+
+ #contenido{
+    width:100%;
+    height:100%;
+    background-color: midnightblue;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+ #primero{
+    width:50%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#segundo{
+    width:50%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+  /* 7ma. Regla para el estiolo de texto del Contenido */
+
+#contenido h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 157, 0);
+    }
+
+#contenido h3{
+    color: rgb(255, 157, 0);
+}
+
+#contenido p{
+    font-size: 20px;
+    color: rgb(135, 206, 250);
+}
+
+  /* 8va. Regla para el estiolo para el aside */
+
+aside{
+    width:25%;
+    height: 100%;
+    background-color: rgb(255, 157, 0);
+    float: right;
+    margin-top: 10px;
+
+}
+  /* 9na. Regla para el estiolo para el aside */
+aside h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: midnightblue;
+}
+
+.clearfix{
+    clear: both;
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        border-radius: 10px;
+        border: 3px solid midnightblue;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgb(95, 158, 160);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+ /* 6ta. Regla para el estiolo del Contenido */
+
+ #contenido{
+    width:100%;
+    height:100%;
+    background-color: midnightblue;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+  /* 7ma. Regla para el estiolo de texto del Contenido */
+
+#contenido h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 157, 0);
+    }
+
+#contenido h3{
+    color: rgb(255, 157, 0);
+}
+
+#contenido p{
+    font-size: 20px;
+    color: rgb(135, 206, 250);
+}
+
+  /* 8va. Regla para el estiolo para el aside */
+
+aside{
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 157, 0);
+    float: right;
+    margin-top: 10px;
+
+}
+  /* 9na. Regla para el estiolo para el aside */
+aside h1{
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: midnightblue;
+}
+
+.clearfix{
+    clear: both;
+}
+}
